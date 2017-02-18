@@ -1,23 +1,29 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'start' ]
-2 info using npm@3.10.9
-3 info using node@v6.9.2
-4 verbose stack Error: missing script: start
-4 verbose stack     at run (/usr/lib/node_modules/npm/lib/run-script.js:151:19)
-4 verbose stack     at /usr/lib/node_modules/npm/lib/run-script.js:61:5
-4 verbose stack     at /usr/lib/node_modules/npm/node_modules.bundled/read-package-json/read-json.js:356:5
-4 verbose stack     at checkBinReferences_ (/usr/lib/node_modules/npm/node_modules.bundled/read-package-json/read-json.js:320:45)
-4 verbose stack     at final (/usr/lib/node_modules/npm/node_modules.bundled/read-package-json/read-json.js:354:3)
-4 verbose stack     at then (/usr/lib/node_modules/npm/node_modules.bundled/read-package-json/read-json.js:124:5)
-4 verbose stack     at ReadFileContext.<anonymous> (/usr/lib/node_modules/npm/node_modules.bundled/read-package-json/read-json.js:295:20)
-4 verbose stack     at ReadFileContext.callback (/usr/lib/node_modules/npm/node_modules.bundled/graceful-fs/graceful-fs.js:78:16)
-4 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:365:13)
-5 verbose cwd /home/david/code/scratch
-6 error Linux 4.8.15-300.fc25.x86_64
-7 error argv "/usr/bin/node" "/usr/bin/npm" "start"
-8 error node v6.9.2
-9 error npm  v3.10.9
-10 error missing script: start
+1 verbose cli [ '/usr/local/Cellar/node/7.4.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'node_modules/.bin/babel',
+1 verbose cli   'destructors.js',
+1 verbose cli   '--presets=babel-preset-es2015' ]
+2 info using npm@4.0.5
+3 info using node@v7.4.0
+4 verbose stack Error: missing script: node_modules/.bin/babel
+4 verbose stack     at run (/usr/local/lib/node_modules/npm/lib/run-script.js:151:19)
+4 verbose stack     at /usr/local/lib/node_modules/npm/lib/run-script.js:61:5
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:356:5
+4 verbose stack     at checkBinReferences_ (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:320:45)
+4 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:354:3)
+4 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:311:12
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+4 verbose stack     at tryToString (fs.js:426:3)
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:413:12)
+5 verbose cwd /Users/david/code/scratch
+6 error Darwin 16.4.0
+7 error argv "/usr/local/Cellar/node/7.4.0/bin/node" "/usr/local/bin/npm" "run" "node_modules/.bin/babel" "destructors.js" "--presets=babel-preset-es2015"
+8 error node v7.4.0
+9 error npm  v4.0.5
+10 error missing script: node_modules/.bin/babel
 11 error If you need help, you may report this error at:
 11 error     <https://github.com/npm/npm/issues>
 12 verbose exit [ 1, true ]
